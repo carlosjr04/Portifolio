@@ -1,6 +1,9 @@
 
 import { DarkMode } from "../../store/DarkMode";
 import style from "./style.module.css";
+import gmailImg from "../../assets/gmail.png";
+import githubImg from "../../assets/github.png";
+import linkedinImg from "../../assets/linkedin.png";
 export default function Footer() {
   const dark = DarkMode((state) => state.dark);
   function Email() {
@@ -14,7 +17,7 @@ export default function Footer() {
           Vamos trabalhar <br /> juntos!
         </h1>
         <button onClick={Email} className={style.botao}>
-          <img src="/gmail.png" alt="" />
+          <img src={gmailImg} alt="Gmail" />
           <p>carlosjr0421@gmail.com</p>
         </button>
       </div>
@@ -23,13 +26,13 @@ export default function Footer() {
         <p>© 2025 todos os direitos reservados.</p>
         <div className={dark ? style.redesSociais : style.redesSociaisClaro}>
           <a target="_blank" href="https://github.com/carlosjr04">
-            <img src="/github.png" alt="" />
+            <img src={githubImg} alt="GitHub" />
           </a>
           <a
             target="_blank"
             href="https://www.linkedin.com/in/carlos-alberto-j%C3%BAnior-88998b202/"
           >
-            <img src="/linkedin.png" alt="" />
+            <img src={linkedinImg} alt="LinkedIn" />
           </a>
           
         </div>

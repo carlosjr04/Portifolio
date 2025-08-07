@@ -3,6 +3,14 @@ import { useEffect, useState } from "react";
 import CardProjeto from "../CardProjeto";
 import type { Card, PillUnity } from "../../Types";
 import { DarkMode } from "../../store/DarkMode";
+import individualImg from "../../assets/individual.png";
+import lobinhoImg from "../../assets/lobinho.png";
+import blogImg from "../../assets/Blog.png";
+import steamImg from "../../assets/SteamImg.png";
+import livrariaImg from "../../assets/livraria.png";
+import pijamaImg from "../../assets/pijama.png";
+import cursoImg from "../../assets/curso.png";
+import samuraiImg from "../../assets/samurai.png";
 
 let pils: PillUnity[] = [
   {
@@ -34,56 +42,56 @@ const cardsProjetos: Card[] = [
     nome: "Pagina individual",
     linguagem: ["HTML", "CSS"],
     link: "https://github.com/carlosjr04/Pagina-individual-DOM",
-    imagem: "/individual.png",
+    imagem: individualImg,
   },
   {
     id: 2,
     nome: "Lobinho",
     linguagem: ["HTML", "CSS", "Javascript"],
     link: "https://github.com/carlosjr04/Adote-um-lobinho",
-    imagem: "/lobinho.png",
+    imagem: lobinhoImg,
   },
   {
     id: 3,
     nome: "Blog",
     linguagem: ["React"],
     link: "https://github.com/carlosjr04/Blog-React",
-    imagem: "/Blog.png",
+    imagem: blogImg,
   },
   {
     id: 4,
     nome: "Steam",
     linguagem: ["React", "Java"],
     link: "https://github.com/carlosjr04/Projeto-Steam",
-    imagem: "/SteamImg.png",
+    imagem: steamImg,
   },
   {
     id: 5,
     nome: "Livraria",
     linguagem: ["React"],
     link: "https://github.com/carlosjr04/Livraria-Next",
-    imagem: "/livraria.png",
+    imagem: livrariaImg,
   },
   {
     id: 6,
     nome: "Pijaminhas",
     linguagem: ["React", "NodeJS"],
     link: "https://github.com/carlosjr04/Pijama_projeto_final",
-    imagem: "/pijama.png",
+    imagem: pijamaImg,
   },
   {
     id: 7,
     nome: "Administrador de cursos",
     linguagem: ["Java"],
     link: "https://github.com/carlosjr04/Curso-em-Java",
-    imagem: "/curso.png",
+    imagem: cursoImg,
   },
   {
     id: 8,
     nome: "Samurai Mitology War",
     linguagem: ["Python"],
     link: "https://github.com/carlosjr04/Samurai-Mitology-War",
-    imagem: "/samurai.png",
+    imagem: samuraiImg,
   },
 ];
 export default function Projeto() {

@@ -3,56 +3,62 @@ import style from "./style.module.css";
 import Card from "../Card";
 import type { CardProps } from "../../Types";
 import { DarkMode } from "../../store/DarkMode";
+import reactImg from "../../assets/react.png";
+import tssImg from "../../assets/tss.png";
+import htmlImg from "../../assets/html.png";
+import figmaImg from "../../assets/figma-icon.png";
+import nodejsImg from "../../assets/nodejs-logo.png";
+import webImg from "../../assets/web_IMAGE.png";
 const cards: CardProps[] = [
   {
     id: 1,
     title: "React e Expanções",
     description:
       "Conhecimento avançado em React e suas principais ferramentas, com experiência na construção de interfaces dinâmicas e componentizadas. Familiaridade com as extensões mais utilizadas do ecossistema, como React Router para navegação e Next.js para renderização do lado do servidor e otimização de desempenho.",
-    image: "/react.png",
+    image: reactImg,
     alt: "Imagem do logo do React",
     imagemExemploBoolean: false,
-    imagemExemplo: "/react.png",
+    imagemExemplo: reactImg,
   },
   {
     id: 2,
     title: "Typescript",
     description:
       "Conhecimento avançado em TypeScript, com sólida compreensão da tipagem estática e dos principais recursos da linguagem. Familiaridade com ES6+ e suas funcionalidades modernas, como arrow functions, destructuring, módulos, promises e classes, além do uso de ferramentas do ecossistema JavaScript moderno.",
-    image: "/tss.png",
+    image: tssImg,
     alt: "Imagem do logo do JavaScript",
     imagemExemploBoolean: false,
-    imagemExemplo: "/react.png",
+    imagemExemplo: reactImg,
   },
   {
     id: 3,
     title: "HTML e CSS",
     description:
       "Conhecimento avançado em HTML e CSS, com domínio de HTML5 e CSS3, aplicando práticas modernas de semântica, acessibilidade e performance. Experiência no uso de ferramentas e técnicas como Flexbox, Grid Layout, animações, variáveis CSS e pré-processadores como SASS.",
-    image: "/html.png",
+    image: htmlImg,
     alt: "Imagem do logo do HTML e CSS",
     imagemExemploBoolean: false,
-    imagemExemplo: "/react.png",
+    imagemExemplo: reactImg,
   },
   {
     id: 4,
     title: "Web Design",
     description:
       "Conhecimento avançado em web design, com foco em criação de interfaces modernas, funcionais e visualmente atrativas. Experiência sólida em design responsivo, garantindo compatibilidade e usabilidade em diferentes dispositivos e tamanhos de tela.",
-    image: "/figma-icon.png",
+    image: figmaImg,
     alt: "Imagem do logo do design responsivo",
     imagemExemploBoolean: false,
-    imagemExemplo: "/web_IMAGE.png",
+    imagemExemplo: webImg,
   },
   {
     id: 5,
     title: "Node JS",
     description:
       "Conhecimento avançado em Node.js, com sólida experiência no desenvolvimento de aplicações utilizando o framework Express. Domínio de suas principais ferramentas e middlewares, além de boas práticas de estruturação de rotas, tratamento de erros e integração com bancos de dados e APIs externas.",
-    image: "/nodejs-logo.png",
+    image: nodejsImg,
     alt: "Imagem do logo do nodejs",
     imagemExemploBoolean: false,
-    imagemExemplo: "/react.png",
+    imagemExemplo: reactImg,
   },
 ];
 export default function Serviços() {

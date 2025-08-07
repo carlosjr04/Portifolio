@@ -1,6 +1,7 @@
 
 import type { Card } from "../../Types";
 import style from "./style.module.css"
+import seta from "../../assets/link.png"
 
 
 export default function CardProjeto(card:Card) {
@@ -21,7 +22,7 @@ export default function CardProjeto(card:Card) {
                 
                 
             </div>
-            <a target="_blank" href={card.link}><button className={style.botao}><img src="/link.png" alt="" /></button></a>
+            <a target="_blank" href={card.link}><button className={style.botao}><img src={seta} alt="" /></button></a>
         </div>
       </div>
     );

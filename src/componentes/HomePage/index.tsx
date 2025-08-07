@@ -1,13 +1,15 @@
 
 import { DarkMode } from "../../store/DarkMode";
 import style from "./style.module.css";
+import minhaFoto from "../../assets/minha foto.jpg";
+
 export default function HomePage() {
   const dark = DarkMode((state) => state.dark);
   
   return (
     <div className={style.container}>
       <div className={dark?style.home:style.homeClaro}>
-        <img className={style.foto} src="/minha foto.jpg" alt="" />
+        <img className={style.foto} src={minhaFoto} alt="Carlos Alberto" />
         <h1>Carlos Alberto</h1>
         <h4>Desenvolvedor Front-End</h4>
         <p>

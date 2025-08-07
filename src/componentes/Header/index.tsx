@@ -1,6 +1,9 @@
 import { DarkMode } from '../../store/DarkMode';
 import style from './style.module.css';
 import { useEffect, useState, useRef } from 'react';
+import groupIcon from '../../assets/Group.png';
+import luaIcon from '../../assets/lua.png';
+import hamburguerIcon from '../../assets/hamburguer.png';
 export default function Header() {
     const dark = DarkMode((state) => state.dark);
     const [aberto, setAberto] = useState(false)
@@ -54,17 +57,17 @@ export default function Header() {
                         <a href="#Contato"><button className={dark ? style.botao : style.botaoClaro}>Contato</button></a>
                         
                         <button onClick={() => changeColor()} className={style.luz}>
-                            <img src={dark ? "/Group.png" : "/lua.png"} alt="Tema" />
+                            <img src={dark ? groupIcon : luaIcon} alt="Tema" />
                         </button>
                         
                     </div> :
                     <div className={style.containerMenu} ref={menuRef}>
                         <button onClick={() => changeColor()} className={style.luz}>
-                            <img src={dark ? "/Group.png" : "/lua.png"} alt="Tema" />
+                            <img src={dark ? groupIcon : luaIcon} alt="Tema" />
                         </button>
                         <div>
                             <button className={style.hamburguerButton} onClick={() => setAberto(!aberto)}>
-                                <img className={style.barras} src="/hamburguer.png" alt="Menu"/>
+                                <img className={style.barras} src={hamburguerIcon} alt="Menu"/>
                             </button>
                             {aberto &&
                             <div className={style.Menu}>
